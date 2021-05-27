@@ -55,5 +55,6 @@ typedef int(*nrLDPC_encoderfunc_t)(unsigned char **,unsigned char **,int,int,sho
    \param p_llrOut Output vector
    \param p_profiler LDPC profiler statistics
 */
+//nrLDPC_decoderfunc_t指向返回值爲int，參數爲這些的函數
 typedef int32_t(*nrLDPC_decoderfunc_t)(t_nrLDPC_dec_params* , int8_t*, int8_t* , t_nrLDPC_procBuf* , t_nrLDPC_time_stats* );
 #endif
